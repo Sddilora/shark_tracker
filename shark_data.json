@@ -1,0 +1,189 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.78037,
+                    32.20996
+                ]
+            },
+            "properties": {
+                "id": 288211,
+                "last_update": "2022-07-27T21:00:18.882201Z",
+                "name": "Grey Lady",
+                "slug": "grey-lady",
+                "category": 8494,
+                "is_published": true,
+                "rating": null,
+                "voting": null,
+                "category_name": {
+                    "en": "Sharks"
+                },
+                "length": "12 ft 5 in.",
+                "weight": "1,142 lbs",
+                "tag_location": "Nantucket, MA",
+                "last_move_datetime": "2018-12-30T10:28:52Z",
+                "stage_of_life": "Sub-Adult",
+                "species": "White Shark (Carcharodon carcharias)",
+                "image": "https://media.mapotic.com/cdn-cgi/image/metadata=none,width=400,height=266,fit=crop/https://pub-ad18855dcf944b0da6f8fdeda00c61a0.r2.dev/media/image/geo/3413/288211/ps5lpd_vhmw8r_img_1934_wm_6thfzs7.jpg",
+                "image_data": {
+                    "path": "https://pub-ad18855dcf944b0da6f8fdeda00c61a0.r2.dev/media/image/geo/3413/288211/ps5lpd_vhmw8r_img_1934_wm_6thfzs7.jpg",
+                    "domain": "ce838d3ec.cloudimg.io"
+                },
+                "gender": "Female",
+                "zping": true,
+                "zping_datetime": "2019-03-11T23:02:51+00:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.834000156,
+                    31.934851763
+                ]
+            },
+            "properties": {
+                "id": 288212,
+                "last_update": "2021-05-20T08:15:15.062917Z",
+                "name": "Al",
+                "slug": "al",
+                "category": 8494,
+                "is_published": true,
+                "rating": null,
+                "voting": null,
+                "category_name": {
+                    "en": "Sharks"
+                },
+                "length": "9 ft 2 in.",
+                "weight": "250 lb",
+                "tag_location": "Port Royal Sound, SC",
+                "last_move_datetime": "2014-06-01T11:51:10Z",
+                "stage_of_life": "Sub-Adult",
+                "species": "Tiger Shark (Galeocerdo cuvier)",
+                "image": "https://media.mapotic.com/cdn-cgi/image/metadata=none,width=400,height=266,fit=crop/https://pub-ad18855dcf944b0da6f8fdeda00c61a0.r2.dev/media/image/geo/3413/288212/qs44xx_cigcuk_al_05082014_ocearch_dnr_tigershark_portroyalsoundsc__1116_8z9b9t7.jpg",
+                "image_data": {
+                    "path": "https://pub-ad18855dcf944b0da6f8fdeda00c61a0.r2.dev/media/image/geo/3413/288212/qs44xx_cigcuk_al_05082014_ocearch_dnr_tigershark_portroyalsoundsc__1116_8z9b9t7.jpg",
+                    "domain": "ce838d3ec.cloudimg.io"
+                },
+                "gender": "Male",
+                "zping": false,
+                "zping_datetime": "2014-05-26T15:40:34+00:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.58917,
+                    40.79099
+                ]
+            },
+            "properties": {
+                "id": 288213,
+                "last_update": "2022-07-29T17:00:18.661518Z",
+                "name": "J.D.",
+                "slug": "jd",
+                "category": 8494,
+                "is_published": true,
+                "rating": null,
+                "voting": null,
+                "category_name": {
+                    "en": "Sharks"
+                },
+                "length": "5 ft 5 in.",
+                "weight": "88 lbs",
+                "tag_location": "Montauk, NY",
+                "last_move_datetime": "2017-10-11T20:25:02Z",
+                "stage_of_life": "Young of the Year",
+                "species": "White Shark (Carcharodon carcharias)",
+                "image": "https://media.mapotic.com/cdn-cgi/image/metadata=none,width=400,height=266,fit=crop/https://pub-ad18855dcf944b0da6f8fdeda00c61a0.r2.dev/media/image/geo/3413/288213/d0tusv_amhjem_jd_aOXBm1p.jpg",
+                "image_data": {
+                    "path": "https://pub-ad18855dcf944b0da6f8fdeda00c61a0.r2.dev/media/image/geo/3413/288213/d0tusv_amhjem_jd_aOXBm1p.jpg",
+                    "domain": "ce838d3ec.cloudimg.io"
+                },
+                "gender": "Male",
+                "zping": true,
+                "zping_datetime": "2017-10-22T11:37:09+00:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.29596,
+                    -0.48968
+                ]
+            },
+            "properties": {
+                "id": 288214,
+                "last_update": "2021-05-20T08:15:21.991485Z",
+                "name": "Saltarina",
+                "slug": "saltarina",
+                "category": 8494,
+                "is_published": true,
+                "rating": null,
+                "voting": null,
+                "category_name": {
+                    "en": "Sharks"
+                },
+                "length": "6 ft 3 in.",
+                "weight": "186 lb",
+                "tag_location": "Galápagos Islands, Ecuador",
+                "last_move_datetime": "2014-03-14T00:58:27Z",
+                "stage_of_life": "Juvenile",
+                "species": "Blacktip Shark (Carcharhinus limbatus)",
+                "image": "https://media.mapotic.com/cdn-cgi/image/metadata=none,width=400,height=266,fit=crop/https://pub-ad18855dcf944b0da6f8fdeda00c61a0.r2.dev/media/image/geo/3413/288214/yh5xfe_azsj3v_012514_rs_ocearch_galapagos_santacruz_0323_vuehafj.jpg",
+                "image_data": {
+                    "path": "https://pub-ad18855dcf944b0da6f8fdeda00c61a0.r2.dev/media/image/geo/3413/288214/yh5xfe_azsj3v_012514_rs_ocearch_galapagos_santacruz_0323_vuehafj.jpg",
+                    "domain": "ce838d3ec.cloudimg.io"
+                },
+                "gender": "Female",
+                "zping": true,
+                "zping_datetime": "2014-06-04T01:05:29+00:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -32.36485,
+                    -3.7876
+                ]
+            },
+            "properties": {
+                "id": 288215,
+                "last_update": "2021-05-20T08:15:15.010788Z",
+                "name": "Bezerra",
+                "slug": "bezerra",
+                "category": 8494,
+                "is_published": true,
+                "rating": null,
+                "voting": null,
+                "category_name": {
+                    "en": "Sharks"
+                },
+                "length": "8 ft 11 in.",
+                "weight": "321 lb",
+                "tag_location": "Fernando de Noronha, Brazil",
+                "last_move_datetime": "2014-08-17T11:30:42Z",
+                "stage_of_life": "Sub-Adult",
+                "species": "Tiger Shark (Galeocerdo cuvier)",
+                "image": "https://media.mapotic.com/cdn-cgi/image/metadata=none,width=400,height=266,fit=crop/https://pub-ad18855dcf944b0da6f8fdeda00c61a0.r2.dev/media/image/geo/3413/288215/gmknpg_ugm9g0_08022014_ocearch_brazil_1294_40tyI5D.jpg",
+                "image_data": {
+                    "path": "https://pub-ad18855dcf944b0da6f8fdeda00c61a0.r2.dev/media/image/geo/3413/288215/gmknpg_ugm9g0_08022014_ocearch_brazil_1294_40tyI5D.jpg",
+                    "domain": "ce838d3ec.cloudimg.io"
+                },
+                "gender": "Female",
+                "zping": true,
+                "zping_datetime": "2015-02-13T10:56:21+00:00"
+            }
+        }
+    ]}
