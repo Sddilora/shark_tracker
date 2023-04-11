@@ -3,20 +3,17 @@
 {% block content %}
     <h1>{% block title %} Welcome to FlaskBlog {% endblock %}</h1>
     {% for shark in sharks %}
-        <a href="#">
             <h2>{{ shark["properties"]["name"] }}</h2>
-        </a>
-        <h3>{{ sharks["properties"]["stage_of_life"] }}</h3>
+        <h3>{{ shark["properties"]["stage_of_life"] }}</h3>
         <p> 
-            <span>{{ sharks["properties"]["gender"] }}</span>
-            <span>{{ sharks["properties"]["rating"] }}</span>
-            <span>{{ sharks["properties"]["voting"] }}</span>
-            <span>{{ sharks["properties"]["species"] }}</span>
-            <img src="{{sharks['properties']['image']}}" alt="image of {{ shark['properties']['name']}} ">
-            <span>{{ sharks["properties"]["length"] }}</span>
-            <span>{{ sharks["properties"]["weight"] }}</span>
-            <span>{{ sharks["properties"]["tag_location"] }}</span>
+            <span>{{ shark["properties"]["gender"] }}</span>
+            <span>{{ shark["properties"]["rating"] }}</span>
+            <span>{{ shark["properties"]["voting"] }}</span>
+            <span>{{ shark["properties"]["species"] }}</span>
+            <img src="{{shark['properties']['image']}}" alt="image of {{ shark['properties']['name']}} ">
+            <span>{{ shark["properties"]["length"] }}</span>
+            <span>{{ shark["properties"]["weight"] }}</span>
+            <span>{{ shark["properties"]["tag_location"] }}</span>
         </p>
-        <hr>
     {% endfor %}
 {% endblock %}

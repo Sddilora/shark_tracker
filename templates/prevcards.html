@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if session %}
+    <div class="logincard">
+        <h1>
+            Hey {{session.user.userinfo.given_name}}
+        </h1>
+        <h2>Sharks you've followed</h2>
+        <ol>
+            <li>JK You've followed none</li>
+        </ol>
+    </div>
+    {% else %}
+    <div class="prevCards">
+        <div class="leftCard card"> 
+            <img class="imgcard" src="{{sharks[0]['properties']['image']}}" alt="image of {{ sharks[0]['properties']['name'] }}">
+            <div class="cardcontent">
+                <h2>{{ sharks[0]['properties']['name'] }}</h2>
+                <p>Bio goes here</p>
+            </div>
+        </div>
+        <div class="midCard card">
+            <img class="imgcard" src="{{sharks[1]['properties']['image']}}" alt="image of {{ sharks[1]['properties']['name'] }}">
+            <div class="cardcontent">
+
+            <h2>{{ sharks[1]['properties']['name'] }}</h2>
+            <p>Bio goes here</p>
+        </div>
+
+        </div>
+        <div class="rightCard card">
+            <img class="imgcard"src="{{sharks[2]['properties']['image']}}" alt="image of {{ sharks[2]['properties']['name'] }}">
+            <div class="cardcontent">
+                <h2>{{ sharks[2]['properties']['name'] }}</h2>
+                <p>Bio goes here</p>
+            </div>
+
+        </div>
+    </div>
+    <h2 class="tagline">Get to know sharks in your area!</h2>
+    <a href="/login" class="signup">Swim up here!</a>
+    {% endif%}
+{% endblock %}  
