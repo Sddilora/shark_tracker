@@ -1,19 +1,17 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block content %}
-    <h1>{% block title %} Welcome to FlaskBlog {% endblock %}</h1>
-    {% for shark in sharks %}
-            <h2>{{ shark["properties"]["name"] }}</h2>
-        <h3>{{ shark["properties"]["stage_of_life"] }}</h3>
-        <p> 
-            <span>{{ shark["properties"]["gender"] }}</span>
-            <span>{{ shark["properties"]["rating"] }}</span>
-            <span>{{ shark["properties"]["voting"] }}</span>
-            <span>{{ shark["properties"]["species"] }}</span>
-            <img src="{{shark['properties']['image']}}" alt="image of {{ shark['properties']['name']}} ">
-            <span>{{ shark["properties"]["length"] }}</span>
-            <span>{{ shark["properties"]["weight"] }}</span>
-            <span>{{ shark["properties"]["tag_location"] }}</span>
+    {% for shark in sharks%}
+        <h2>{{ shark['properties']['name'] }}</h2>
+        <h3>{{ shark['properties']['stage_of_life'] }}</h3>
+        <p><span>{{ shark['properties']['gender'] }}</span>
+            <span>{{ shark['properties']['rating'] }}</span>
+            <span>{{ shark['properties']['voting'] }}</span>
+            <span>{{ shark['properties']['species'] }}</span>
+            <img src="{{shark['properties']['image']}}" alt="image of {{ shark['properties']['name'] }}">
+            <span>{{ shark['properties']['length'] }}</span>
+            <span>{{ shark['properties']['weight'] }}</span>
+            <span>{{ shark['properties']['tag_location'] }}</span>
         </p>
     {% endfor %}
-{% endblock %}
+{% endblock %}  
