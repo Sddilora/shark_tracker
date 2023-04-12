@@ -11,28 +11,6 @@ from dotenv import find_dotenv, load_dotenv
 ENV_FILE = find_dotenv()
 if ENV_FILE:
     load_dotenv(ENV_FILE)
-    
-'''
-def get_db_connection():
-    conn = sqlite3.connect('database.db')
-    conn.row_factory = sqlite3.Row
-    return conn
-
-def get_all():
-    conn = get_db_connection()
-    shark = conn.execute('SELECT * FROM sharks').fetchall()
-
-    conn.close()
-    return shark
-
-def get_shark(shark_id):
-    conn = get_db_connection()
-    shark = conn.execute('SELECT * FROM sharks WHERE id = ?',
-                        (shark_id,)).fetchone()
-    conn.close()
-    if shark is None:
-        print('No Sharks Here.')
-    return shark'''
 
 app = Flask(__name__)
 app.secret_key = env.get("APP_SECRET_KEY")
@@ -48,6 +26,24 @@ oauth.register(
     },
     server_metadata_url=f'https://{env.get("AUTH0_DOMAIN")}/.well-known/openid-configuration'
 )
+
+@app.route('/')
+def index():
+    sharks = None
+    with open('static/sharkdata.json', 'r') as f:
+        sharks = json.load(f)
+        sharks = sharks['features']
+        print(sharks[0]['properties'])
+    return render_template('prevcards.html', sharks=sharks, session=session)
+
+@app.route('/card')
+def card():
+    sharks = None
+    with open('static/sharkdata.json', 'r') as f:
+        sharks = json.load(f)
+        sharks = sharks['features']
+        print(sharks[0]['properties'])
+    return render_template('card.html', sharks=sharks)
 
 @app.route("/login")
 def login():
@@ -76,24 +72,27 @@ def logout():
         )
     )
 
-@app.route('/')
-def index():
-    sharks = None
-    with open('static/sharkdata.json', 'r') as f:
-        sharks = json.load(f)
-        sharks = sharks['features']
-        print(sharks[0]['properties'])
-    return render_template('prevcards.html', sharks=sharks, session=session)
+'''
+def get_db_connection():
+    conn = sqlite3.connect('database.db')
+    conn.row_factory = sqlite3.Row
+    return conn
 
+def get_all():
+    conn = get_db_connection()
+    shark = conn.execute('SELECT * FROM sharks').fetchall()
 
-@app.route('/card')
-def card():
-    sharks = None
-    with open('static/sharkdata.json', 'r') as f:
-        sharks = json.load(f)
-        sharks = sharks['features']
-        print(sharks[0]['properties'])
-    return render_template('card.html', sharks=sharks)
+    conn.close()
+    return shark
+
+def get_shark(shark_id):
+    conn = get_db_connection()
+    shark = conn.execute('SELECT * FROM sharks WHERE id = ?',
+                        (shark_id,)).fetchone()
+    conn.close()
+    if shark is None:
+        print('No Sharks Here.')
+    return shark'''
 
 '''@app.route('/dbtest/<string:shark_id>')
 def post(shark_id):
